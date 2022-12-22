@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar_parent {
+    background-color: white;
+}
+
+.menu-content {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.sidebar-footer {
+    margin-top: 50px;
+    /* background-color: rgba(113, 111, 111, 0.434); */
+}
+
+.footer-text {
+    color: rgba(194, 189, 189, 0.955);
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sideBar {
+    overflow-x :hidden;
+    overflow-y: auto;
+    width: 33vh;
+    background-color: #111425;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+#sideBarScroll::-webkit-scrollbar-thumb {
+    background-color: rgba(107, 109, 117, 0.35);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.home {
+    display: flex;
+}
+
+.sidebar-icon {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    left: -10px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.slide-left {
+    overflow-x :hidden;
+    overflow-y: hidden;
+    width: 8vh;
+    transition: .2s;
+    background-color: #111425;
+    height: 100vh;
+    scroll-behavior: smooth;
+
+}
+
+.slide-right {
+    overflow-x :hidden;
+    overflow-y: auto;
+    width: 33vh;
+    transition: .5s;
+    background-color: #111425;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.footer-text-left {
+    background-color: red;
+}
+
+/* .nav-item:hover {
+    transition: .7s;
+    color: #009ef7;
+    border-radius: 5px;
+    background-color: #009cf70c;
+} */
+
+.nav-active {
+    transition: .7s;
+    border-radius: 5px;
+    background-color: #009cf70b;
+}
+
+.profile {
+    position: absolute;
+    right: 25px;
+    background-color: white;
+    width: 250px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    z-index: 90;
+    margin-top: 15px;
+    visibility: hidden;
+}
+
+.slide-up {
+    transition : .5s;
+    margin-top: 0px;
+    visibility: visible;
+}
+
+.slide-down {
+    visibility: hidden;
+}
+
+.search {
+    height: 30px;
+    font-size: 12px;
+
+}
+
+.search::placeholder {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.inbox_parent {
+    width: 95%;
+    margin: 10px auto;
+    padding-bottom: 40px;
+}
+
+.inbox_parent::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
+    /* background-color: red; */
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.reload {
+    position: absolute;
+}
+
+.misc_files {
+    width: 95%;
+    margin: 10px auto;
+}
+
+.upload_docs {
+    width: 95%;
+    margin: 10px auto;
+    height: 120px;
+    /* padding-left: 30px; */
+}
+
+.docs_inner {
+    background-color: white;
+    padding-left: 35px;
+    padding-top: 20px;
+    border-radius: 8px;
+    padding-bottom: 30px;
+}
+
+.upload_cont {
+    border: 1px dashed rgb(189, 189, 189);
+    height: 200px;
+    border-radius: 7px;
+    margin: 50px auto;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload_cont_inner {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    /* width: 50px;
+    height: 50px; */
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#imageName{
+    color:green;
+}
+
+.file_container {
+    font-size: 10px;
+    background-color: rgba(226, 226, 226, 0.4);
+    width: 35vh;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    padding-left: 15px;
+    font-weight: bold;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.close {
+    margin-right: 10px;
+}
+
+.unselected {
+    color: red;
+}
+
+.write_mail {
+    width: 95%;
+    margin: 10px auto;
+}
+
+.reply {
+    margin-top: 30px;
+    background-color: white;
+    padding-top: 20px;
+    margin-top: 0px;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 35px;
+}
+
+.write_reply {
+    background-color: white;
+    /* margin: 0 auto; */
+    /* width: 90%; */
+    margin-top: -30px;
+    border-radius: 5px;
+}
+
+#mail_comment {
+    height: 90%;
+    border: 1px solid transparent;
+}
+
+#mail_comment::placeholder{
+    font-size: 11px;
+    font-weight: light;
+}
+
+.reply_cont {
+    margin: 10px auto;
+    width: 95%;
+    border-radius: 10px;
+}

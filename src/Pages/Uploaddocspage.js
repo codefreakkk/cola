@@ -1,0 +1,17 @@
+import React from 'react'
+import Navbar from '../components/Navbar';
+import Uploaddocs from '../components/Uploaddocs';
+
+
+function Uploaddocspage({toggle, closeBar}) {
+  return (
+    <>
+    <div style={{width: '100%', transition: '.4s', marginLeft: closeBar ? '8vh' : '33vh'}}>
+        <Navbar toggle={toggle} closeBar={closeBar} />
+        <Uploaddocs/>
+    </div>
+    </>
+  )
+}
+
+export default Uploaddocspage
